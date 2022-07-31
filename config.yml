@@ -8,7 +8,7 @@ themesDir: "./themes"
 params:
   author: 'Dominik Kiersz; Bethan Iley'
   description: 'Good, occassionally poor'
-  avatar: ./static/stochastic-logo.png
+  avatar: static/images/stochastic-logo.png
   menu_item_separator: " - "
   style:
     darkestColor: "#282a35"
