@@ -1,6 +1,0 @@
-baseURL = 'http://somethingstochastic.com/'
-languageCode = 'en-uk'
-title = 'Something Stochastic'
-theme = 'm10c'
-author = 'Dominik Kiersz; Bethan Iley'
-description = 'Good, occassionally poor'

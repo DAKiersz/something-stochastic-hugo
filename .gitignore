@@ -1,0 +1,4 @@
+*.scss*.json
+*.scss*.content
+.hugo_build.lock
+*.min.*
