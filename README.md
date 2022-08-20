@@ -1,11 +1,10 @@
 # Something Stochastic (Hugo)
+
 This repository contains the website files for `somethingstochastic.com`, a personal website developed jointly by Dominik Kiersz and Bethan Iley.
 
-This builds on our initial efforts but instead uses a Hugo Static Site Generator to ease development. The initial Hugo theme is based on:
+This builds on our initial efforts but instead uses a Hugo Static Site Generator to ease development.
 
-https://github.com/vaga/hugo-theme-m10c
-
-Last Updated: 31st July 2022
+Last Updated: 20th August 2022
 
 ## Description
 
@@ -17,4 +16,5 @@ Active
 
 ## Needs Implementation
 
-* Include functions to minimise differences between pages
+- Layouts with Bootstrap
+- Content

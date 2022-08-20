@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+    {{.Content}} <!--Displays hugo content-->
+    {{ range .Pages }} <!-- loop for titles-->
+        {{.Title}} <br>
+    {{ end }}
+
+{{ end }}
+
+{{ define "footer" }}
+
+    List page template footer.
+
+{{ end }}

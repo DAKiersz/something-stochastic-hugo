@@ -2,16 +2,8 @@ baseURL: 'https://somethingstochastic.com/'
 title: 'Something Stochastic'
 languageCode: 'en-uk'
 
-theme: 'm10c'
-themesDir: "./themes"
-
 params:
   author: 'Dominik Kiersz; Bethan Iley'
   description: 'Good, occassionally poor'
   avatar: static/images/stochastic-logo.png
-  menu_item_separator: " - "
-  style:
-    darkestColor: "#282a35"
-    darkColor: "#282a359d"
-    primaryColor: "#ffffff"
 
