@@ -1,9 +1,7 @@
-baseURL: 'https://somethingstochastic.com/'
-title: 'Something Stochastic'
-languageCode: 'en-uk'
+baseURL: "https://somethingstochastic.com/"
+title: "Something Stochastic"
+languageCode: "en-uk"
 
 params:
-  author: 'Dominik Kiersz; Bethan Iley'
-  description: 'Good, occassionally poor'
-  avatar: static/images/stochastic-logo.png
-
+  description: "Good, occassionally poor"
+  logo: static/images/stochastic-logo.png
