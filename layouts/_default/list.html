@@ -1,7 +1,10 @@
 {{ define "main" }}
 
-    {{.Content}} <!--Displays hugo content-->
-    {{ range .Pages }} <!-- loop for titles-->
+    <hr>
+        {{.Content}}
+    <hr>
+
+    {{ range .Pages }}
         {{.Title}} <br>
     {{ end }}
 

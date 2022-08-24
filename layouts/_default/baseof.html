@@ -4,9 +4,46 @@
     {{ partial "head" .}}
   </head>
   <body>
-    {{ partial "sidebar" .}}
-    {{ partial "header" .}}
-    {{ block "main" .}} {{end}}
-    {{ partial "footer" .}}
+    <div class="container-fluid mt-3">
+      <div class="row">
+
+        {{/* Main Row 1 */}}
+        <div class="col-md-2 border-end border-3">
+           <nav class="sidebar">
+            <div class="nav flex-column">
+                <a href="#"><img class="img-responsive" src="img/stochastic-logo.png" alt="Stochastic Logo" style="width:400px"></a> <br>
+              <li class="nav-item p-2">
+                <a class="nav-link " href="#">About Us</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link" href="#">Profiles</a>
+              </li>
+              <li class="nav-item p-2">
+                <a class="nav-link disabled" href="#">Tutorials</a>
+              </li>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-md">
+          <h1 class="text-center">{{.Title}}</h1>
+          {{if .Params.subtitle }}
+              <h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
+          {{end}}
+
+          {{ block "main" .}} {{end}}
+        </div>
+
+        {{/* Footer Row 2 */}}
+        <div class="row position-absolute bottom-0 start-50 translate-middle border-top border-3">
+          <div class="col">
+            {{ partial "footer" .}}
+          <div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

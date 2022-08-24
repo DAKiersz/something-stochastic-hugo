@@ -9,4 +9,4 @@ draft: false
 # categories: ["cat1"]
 ---
 
-This is a basic homepage content called by {{.Contain}}
+This is a basic homepage content called by {{.Contains}}
