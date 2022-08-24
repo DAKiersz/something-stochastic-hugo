@@ -3,5 +3,4 @@ title: "Something Stochastic"
 languageCode: "en-uk"
 
 params:
-  description: "Good, occassionally poor"
-  logo: static/images/stochastic-logo.png
+  logo: static/img/stochastic-logo.png

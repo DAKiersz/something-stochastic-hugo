@@ -1,4 +1,9 @@
-<h1> {{.Title }}</h1>
-<p>{{ .Date }}</p>
-<hr>
-<br>
+<div class="text-center">
+    <h1>{{.Title}}</h1>
+</div>
+
+{{if .Params.subtitle }}
+    <div class="text-center">
+        <h2 class="text-secondary h3">{{ .Params.subtitle }}</h2>
+    </div>
+{{end}}
