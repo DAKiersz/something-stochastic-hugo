@@ -1,5 +1,14 @@
 {{ define "main" }}
 
-    <hr>{{.Content}}<hr>
+<hr>{{.Content}}
+<hr>
+
+{{ range (where .Pages "File.Dir" "in" "/blog/") }}
+<!-- loop for titles-->
+<li>
+    {{ .PublishDate.Format "Jan 2006" }} -
+    <a href="{{.Permalink}}">{{.Title}}</a>
+</li>
+{{ end }}
 
 {{end}}
