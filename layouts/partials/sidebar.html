@@ -1,0 +1,26 @@
+<a href="/"><img class="img-fluid" src="/img/stochastic-logo.png" alt="Stochastic Logo"></a>
+<br>
+
+<li class="nav-item">
+    <a class="nav-link " href="/about-us">About Us</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/blog">Blog</a>
+</li>
+<li class="nav-item">
+    <a href="/" data-bs-toggle="collapse" data-bs-target="#profileSubmenu" aria-expanded="false"
+        class="nav-link dropdown-toggle">Profiles</a>
+    <ul class="collapse" id="profileSubmenu">
+        <li class="nav-item-profile">
+            <a class="nav-link" href="{{.Site.BaseURL}}/profiles/beth">Bethan Iley</a>
+        </li>
+        <li class="nav-item-profile">
+            <a class="nav-link" href="{{.Site.BaseURL}}/profiles/dom">Dominik Kiersz</a>
+        </li>
+    </ul>
+</li>
+<li class="nav-item">
+    <a class="nav-link disabled" href="#">Tutorials</a>
+</li>
+
+{{ partial "footer" .}}

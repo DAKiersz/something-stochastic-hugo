@@ -1,10 +1,12 @@
 {{ define "main" }}
 
-<hr>{{.Content}}
+<hr>
+{{.Content}}
 <hr>
 
-{{ range (where .Pages "File.Dir" "in" "/blog/") }}
-<!-- loop for titles-->
+<h2>Recent Posts</h2>
+
+{{ range where $.Site.RegularPages "File.Dir" "content/blog/"}}
 <li>
     {{ .PublishDate.Format "Jan 2006" }} -
     <a href="{{.Permalink}}">{{.Title}}</a>
