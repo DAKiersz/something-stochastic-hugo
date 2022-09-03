@@ -11,15 +11,13 @@
       <nav id="sidebar">
         {{ partial "sidebar" .}}
       </nav>
+      <footer class="mt-auto">
+        <p class="text-center text-secondary">&#169 Copyright 2022 Dominik Kiersz</p>
+      </footer>
     </div>
-    <div id="content-col" class="col-10 flex-column p-4 p-md-5">
-      <header>
-        {{ partial "header" .}}
-      </header>
-      <main>
-        {{ block "main" . }}
-        {{ end }}
-      </main>
+    <div id="content-col" class="col-10 flex-column p-4 p-md-5 ">
+      {{ block "main" . }}
+      {{ end }}
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

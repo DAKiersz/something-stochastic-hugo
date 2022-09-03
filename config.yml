@@ -4,3 +4,4 @@ languageCode: "en-uk"
 
 params:
   logo: static/img/stochastic-logo.png
+  author: Dominik Kiersz

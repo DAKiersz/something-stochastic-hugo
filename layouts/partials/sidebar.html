@@ -2,20 +2,20 @@
 <br>
 
 <li class="nav-item">
-    <a class="nav-link " href="/about-us">About Us</a>
+    <a class="nav-link " href="/about-us">About</a>
 </li>
 <li class="nav-item">
     <a class="nav-link" href="/blog">Blog</a>
 </li>
 <li class="nav-item">
     <a href="/" data-bs-toggle="collapse" data-bs-target="#profileSubmenu" aria-expanded="false"
-        class="nav-link dropdown-toggle">Profiles</a>
+        class="nav-link dropdown-toggle">Author</a>
     <ul class="collapse" id="profileSubmenu">
         <li class="nav-item-profile">
-            <a class="nav-link" href="{{.Site.BaseURL}}/profiles/beth">Bethan Iley</a>
+            <a class="nav-link" href="{{.Site.BaseURL}}/profile/dom">CV</a>
         </li>
         <li class="nav-item-profile">
-            <a class="nav-link" href="{{.Site.BaseURL}}/profiles/dom">Dominik Kiersz</a>
+            <a class="nav-link" href="#">Contact</a>
         </li>
     </ul>
 </li>
@@ -23,4 +23,3 @@
     <a class="nav-link disabled" href="#">Tutorials</a>
 </li>
 
-{{ partial "footer" .}}

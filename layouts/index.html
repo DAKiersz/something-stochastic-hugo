@@ -1,16 +1,20 @@
 {{ define "main" }}
 
-<hr>
-{{.Content}}
-<hr>
+{{ partial "header" }}
 
-<h2>Recent Posts</h2>
+<div id="index-content">
+    <hr>
+    {{.Content}}
+    <hr>
 
-{{ range where $.Site.RegularPages "File.Dir" "content/blog/"}}
-<li>
-    {{ .PublishDate.Format "Jan 2006" }} -
-    <a href="{{.Permalink}}">{{.Title}}</a>
-</li>
-{{ end }}
+    <h2>Recent Posts</h2>
+
+    {{ range where $.Site.RegularPages "File.Dir" "content/blog/"}}
+    <li>
+        {{ .PublishDate.Format "Jan 2006" }} -
+        <a href="{{.Permalink}}">{{.Title}}</a>
+    </li>
+    {{ end }}
+</div>
 
 {{end}}

@@ -1,7 +1,8 @@
 {{ define "main" }}
 
-<article>
-    <header></header>
+{{ partial "header" .}}
+
+<div id="list-content">
     <ul>
         {{ range where .Paginator.Pages "Type" "!=" "page" }}
         <li>
@@ -15,6 +16,6 @@
         </li>
         {{ end }}
     </ul>
-</article>
+</div>
 
 {{end}}
