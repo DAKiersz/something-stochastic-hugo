@@ -1,28 +1,32 @@
-<a class="navbar-brand" href="/"><img class="img-fluid w-75 p-3" src="/img/stochastic-logo-3.png"
-        alt="Stochastic Logo"></a>
-<br>
+<nav id="navbar" class="navbar navbar-expand-lg p-0">
+    <div id="navbar-container" class="container">
+        <a class="navbar-brand" href="/"><img class="img-fluid w-75 p-3" src="/img/stochastic-logo-3.png"
+                alt="Stochastic Logo"></a>
+        <br>
 
-<div class="collapse navbar-collapse" id="navbar-content">
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="blog">Blog</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Author
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">CV</a>
-                <a class="dropdown-item" href="#">Contact</a>
-                <a class="dropdown-item" href="#">Trivia</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-        </li>
-    </ul>
-</div>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Author
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{.Site.BaseURL}}/profile/dom">CV</a>
+                        <a class="dropdown-item" href="#">Contact</a>
+                        <a class="dropdown-item" href="#">Trivia</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

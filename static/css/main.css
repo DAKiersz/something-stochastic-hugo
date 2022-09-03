@@ -7,10 +7,24 @@ p {
     line-height: 1.25;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: "Roboto Mono", monospace;
     color: #ffffff;
 }
+
+
+/* a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent
+}
+
+a:hover,
+a:focus {
+    color: #304f81;
+    text-decoration: underline
+} */
 
 /* Main-block */
 

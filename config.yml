@@ -1,8 +1,8 @@
 baseURL: "https://somethingstochastic.com/"
 title: "Something Stochastic"
 languageCode: "en-uk"
+custom_css: static/css/main.css
 
 params:
-  logo: static/img/stochastic-logo.png
   author: Dominik Kiersz
-  custom_css: static/css/main.css
+  

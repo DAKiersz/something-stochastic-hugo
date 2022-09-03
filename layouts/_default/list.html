@@ -5,22 +5,12 @@
 <h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
 {{ end }}
 
-<div id="list-content">
+<hr>
 
-    {{ range where .Paginator.Pages "Type" "!=" "page" }}
+{{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
 
-    <div id="post-list-item" , class="p2">
-        <a href="{{ .Permalink }}">
-            <h2>{{ .Title }}</h2>
-        </a>
-        <span>
-            <p>{{ .PublishDate.Format "Jan 2, 2006" }}</p>
-            <p>{{ .ReadingTime }} min read</p>
-        </span>
-    </div>
-
-    {{ end }}
-
-</div>
+<p>{{ .PublishDate.Format "1 Jan 2006" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+{{/* <time datetime="">{{.PublishDate}}</time> */}}
+{{ end }}
 
 {{end}}
