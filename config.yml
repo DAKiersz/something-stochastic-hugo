@@ -1,7 +1,7 @@
-baseURL: "https://somethingstochastic.com/"
+baseURL: "//somethingstochastic.com/"
 title: "Something Stochastic"
 languageCode: "en-uk"
-custom_css: static/css/main.css
+custom_css: css/custom.css
 
 params:
   author: Dominik Kiersz

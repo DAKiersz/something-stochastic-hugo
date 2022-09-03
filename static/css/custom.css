@@ -1,5 +1,13 @@
 /* Basic */
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
 p {
     font-family: "Roboto Mono", sans-serif;
     color: #ffffff;
@@ -11,42 +19,42 @@ h1,
 h2 {
     font-family: "Roboto Mono", monospace;
     color: #ffffff;
+    padding-top: 1rem;
 }
 
 
-/* a {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: transparent
-}
+/* Background wrapper */
 
-a:hover,
-a:focus {
-    color: #304f81;
-    text-decoration: underline
-} */
-
-/* Main-block */
-
-#main-block {
-    background-color: #282a35;
-    height: 100vh;
+.wrapper {
+    background-color: #12131d;
+    height: 100%;
 }
 
 /* Navigation Bar */
 
 #navbar-container {
-    background-color: #36394a;
+    background-color: #282a35;
 }
 
 .nav-item a {
     color: #ffffff;
     font-family: "Roboto Mono", monospace;
-    font-size: 1.5rem;
-    display: block;
+    font-size: 1.75rem;
 }
 
 .nav-item a:hover {
     background-color: #282a3560;
     color: #ffffff
+}
+
+/* Main Block */
+
+#main-block {
+    border: 10px solid #282a35;
+}
+
+/*  Footer  */
+
+#footer-partial {
+    background-color: #282a35;
 }
