@@ -2,7 +2,10 @@
 
 <article>
     <header>
-        {{ partial "header" .}}
+        <h1 class="text-center">{{.Title}}</h1>
+        {{if .Params.subtitle }}
+        <h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
+        {{ end }}
     </header>
     <div id="profile-content">
         {{ .Content }}

@@ -7,7 +7,7 @@ p {
     line-height: 1.25;
 }
 
-h1 {
+h1, h2 {
     font-family: "Roboto Mono", monospace;
     color: #ffffff;
 }

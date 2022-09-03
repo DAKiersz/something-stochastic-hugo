@@ -1,21 +1,26 @@
 {{ define "main" }}
 
-{{ partial "header" .}}
+<h1 class="text-center">{{.Title}}</h1>
+{{if .Params.subtitle }}
+<h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
+{{ end }}
 
 <div id="list-content">
-    <ul>
-        {{ range where .Paginator.Pages "Type" "!=" "page" }}
-        <li>
-            <a href="{{ .Permalink }}">
-                <h2>{{ .Title }}</h2>
-            </a>
-            <span>
-                <p>{{ .PublishDate.Format "Jan 2, 2006" }}</p>
-                <p>{{ .ReadingTime }} min read</p>
-            </span>
-        </li>
-        {{ end }}
-    </ul>
+
+    {{ range where .Paginator.Pages "Type" "!=" "page" }}
+
+    <div id="post-list-item" , class="p2">
+        <a href="{{ .Permalink }}">
+            <h2>{{ .Title }}</h2>
+        </a>
+        <span>
+            <p>{{ .PublishDate.Format "Jan 2, 2006" }}</p>
+            <p>{{ .ReadingTime }} min read</p>
+        </span>
+    </div>
+
+    {{ end }}
+
 </div>
 
 {{end}}
