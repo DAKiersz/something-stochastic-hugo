@@ -42,10 +42,17 @@ h2 {
     font-size: 1.75rem;
 }
 
-.nav-item a:hover {
-    background-color: #282a3560;
-    color: #ffffff
+.nav-item a:hover,
+.nav-item a:focus {
+    background-color: #282a35;
+    color: #ffffffb8
 }
+
+
+.dropdown-menu.show {
+    background-color: #282a35;
+}
+
 
 /* Main Block */
 
