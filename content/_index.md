@@ -13,7 +13,7 @@ draft: false
 
 Welcome to Something Stochastic - a blog that is good, _occassionally poor_. My name is Dominik Kiersz - you can find more about me, CV and contact details in the **Author** menu.
 
-Established in 2022 (and daydreamed since 2018), I hope this blog will allow me to share my often erractic passion for tech and misceleious engineering. You can find the whole list of posts in **Blog** menu.
+Established in 2022 (and daydreamed since 2018), this blog will allow me to share my often erractic passion for tech and miscellaneous engineering. You can find the whole list of posts in **Blog** menu.
 
 This website was written powered by Hugo Single-Site Generator (SSG) and designed by me using the Bootstrap 5.2 framework. The logo has been designed by Bethan Iley.
 
