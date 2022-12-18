@@ -1,16 +1,18 @@
 {{ define "main" }}
 
-<h1 class="text-center">{{.Title}}</h1>
-{{if .Params.subtitle }}
-<h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
-{{ end }}
+<div id="main-list">
+    <h1 class="text-center">{{.Title}}</h1>
+    {{if .Params.subtitle }}
+    <h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
+    {{ end }}
 
-<hr>
+    <hr>
 
-{{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
+    {{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
 
-<p>{{ .PublishDate.Format "1 Jan 2006" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
-{{/* <time datetime="">{{.PublishDate}}</time> */}}
-{{ end }}
+    <p>{{ .PublishDate.Format "1 Jan 2006" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    {{/* <time datetime="">{{.PublishDate}}</time> */}}
+    {{ end }}
+</div>
 
 {{end}}

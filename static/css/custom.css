@@ -9,15 +9,15 @@ body {
 
 
 p {
-    font-family: "Roboto Mono", sans-serif;
+    font-family: "Iosevka", sans-serif;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.25;
 }
 
 h1,
 h2 {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Iosevka", monospace;
     color: #ffffff;
     padding-top: 1rem;
 }
@@ -25,7 +25,7 @@ h2 {
 
 /* Background wrapper */
 
-.wrapper {
+#background-wrapper {
     background-color: #12131d;
     height: 100%;
 }
@@ -36,9 +36,14 @@ h2 {
     background-color: #282a35;
 }
 
+.nav-brand a {
+    width: auto;
+    margin-right: 50%;
+}
+
 .nav-item a {
     color: #ffffff;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Iosevka", monospace;
     font-size: 1.75rem;
 }
 
@@ -48,16 +53,15 @@ h2 {
     color: #ffffffb8
 }
 
-
 .dropdown-menu.show {
     background-color: #282a35;
 }
 
-
 /* Main Block */
 
 #main-block {
-    border: 10px solid #282a35;
+    border-left: 5px solid #282a35;
+    border-right: 5px solid #282a35;
 }
 
 /*  Footer  */

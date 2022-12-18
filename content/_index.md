@@ -11,7 +11,7 @@ draft: false
 
 ## About
 
-Welcome to Something Stochastic - a blog that is good, _occassionally poor_. My name is Dominik Kiersz - you can find more about me, CV and contact details in the **Author** menu.
+Welcome to Something Stochastic - a blog that is good, _occassionally poor_. My name is Dominik, you can find more about me, CV and contact details in the **Author** menu.
 
 Established in 2022 (and daydreamed since 2018), this blog will allow me to share my often erractic passion for tech and miscellaneous engineering. You can find the whole list of posts in **Blog** menu.
 
