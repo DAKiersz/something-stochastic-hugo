@@ -15,7 +15,6 @@ Active
 - Layouts with Bootstrap
 - Content
 
-
 # Something Stochastic
 
 **Version:** 0.1
