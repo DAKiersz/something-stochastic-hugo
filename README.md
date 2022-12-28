@@ -2,7 +2,7 @@
 
 **Version:** 0.1
 
-**Last Updated:** Last Updated: 28th December 2022.
+**Last Updated:** 28th December 2022.
 
 **Developer(s):** Dominik Kiersz
 
