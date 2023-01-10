@@ -7,11 +7,11 @@
 
 <body>
 
-  <div id="background-wrapper" class="wrapper">
+  <div id="background-wrapper" class="container">
 
     {{ partial "header" .}}
 
-    <main id="main-block" class="container p-4">
+    <main id="main-block">
       {{ block "main" . }}
       {{ end }}
     </main>

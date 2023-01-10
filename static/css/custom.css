@@ -1,12 +1,10 @@
-/* Basic */
+/* Globals */
 
 html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
-
 
 p {
     font-family: "Iosevka", sans-serif;
@@ -23,18 +21,26 @@ h2 {
 }
 
 
-/* Background wrapper */
+/* Structure */
 
 #background-wrapper {
     background-color: #12131d;
-    height: 100%;
 }
-
-/* Navigation Bar */
 
 #navbar-container {
     background-color: #282a35;
 }
+
+#main-block {
+    border-left: 5px solid #282a35;
+    border-right: 5px solid #282a35;
+}
+
+#footer-partial {
+    background-color: #282a35;
+}
+
+/* Navigation Bar Specific */
 
 .nav-brand a {
     width: auto;
@@ -54,18 +60,5 @@ h2 {
 }
 
 .dropdown-menu.show {
-    background-color: #282a35;
-}
-
-/* Main Block */
-
-#main-block {
-    border-left: 5px solid #282a35;
-    border-right: 5px solid #282a35;
-}
-
-/*  Footer  */
-
-#footer-partial {
     background-color: #282a35;
 }
