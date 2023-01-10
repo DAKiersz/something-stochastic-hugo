@@ -2,7 +2,7 @@
 
 <div id="index-content">
 
-    {{.Content}}
+    {{ .Content }}
 
     {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
         <p>{{ .PublishDate.Format "1 Jan 2006" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
