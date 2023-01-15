@@ -11,14 +11,10 @@ draft: false
 
 ## About
 
-A blog that is good, _occassionally poor_. You can find more about me in the **About** menu.
+A blog that is good, _occassionally poor_.
 
 Established in 2023 (and daydreamed since 2018), this blog allows me to share my often erractic passion for tech and miscellaneous engineering. You can find the whole list of posts in **Blog** menu.
 
 This website was written powered by Hugo Single-Site Generator (SSG) and designed by me using the Bootstrap 5.3 framework. The logo has been designed by Bethan Iley.
-
-## Disclaimer
-
-All opinions are mine own, and do not represent those of that of my current and former employer(s). Unless specified, this blog is not sponsored or affiliated with any companies or manufactures of products mentioned.
 
 ## Recent Posts

@@ -14,7 +14,7 @@ p {
 }
 
 h1,
-h2, 
+h2,
 h5,
 h6 {
   font-family: "Iosevka", monospace;
@@ -22,11 +22,11 @@ h6 {
 
 /* Structure */
 
-body {
-  background-color: #12131d;
+.global-bg-colour {
+  background-color: #22232c;
 }
 
-#navbar-container {
+.navbar-bg-colour {
   background-color: #282a35;
 }
 
@@ -41,4 +41,10 @@ body {
 .nav-item a:focus {
   background-color: #282a35;
   color: #ffffffb8;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 0.5rem;
 }
