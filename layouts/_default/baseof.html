@@ -5,16 +5,13 @@
   </head>
 
   <body>
-    <div id="background-wrapper">
-      {{ partial "header" .}}
+    {{ partial "header" .}}
 
-      <main id="main-block" class="container">
-        {{ block "main" . }} 
-        {{ end }}
-      </main>
+    <main class="container mt-5">
+      {{ block "main" . }} {{ end }}
+    </main>
 
-      {{ partial "footer" .}}
-    </div>
+    {{ partial "footer" .}}
 
     <!-- Bootstrap 5.3 Script -->
     <script
@@ -22,7 +19,5 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </body>
 </html>

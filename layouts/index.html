@@ -1,13 +1,31 @@
 {{ define "main" }}
 
-<div id="index-content">
+<div id="index-content" class="container">
+    
+  {{ .Content }}
 
-    {{ .Content }}
-
+  <div class="row">
     {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
-        <p>{{ .PublishDate.Format "1 Jan 2006" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></p>
-    {{ end }}
 
+    <div class="card mt-2">
+      {{/*
+      <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}" />
+      */}}
+      <div class="card-body">
+        <h5 class="card-title">{{ .Title }}</h5>
+        <p class="card-text">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}">Read More</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"
+          >{{ .PublishDate.Format "1 Jan 2006" }}
+          <i class="bi bi-watch-fill"></i> <i class="bi bi-tag-fill"></i> {{
+          .Params.Tags }}</small
+        >
+      </div>
+    </div>
+    {{ end }}
+  </div>
 </div>
 
 {{end}}
