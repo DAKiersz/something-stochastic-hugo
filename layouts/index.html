@@ -9,17 +9,20 @@
     {{/*
     <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}" />
     */}}
-    <div class="card-body navbar-bg-colour">
+
+    <div class="card-body">
       <h5 class="card-title">{{ .Title }}</h5>
       <p class="card-text">{{ .Summary }}</p>
       <a href="{{ .Permalink }}">Read More</a>
     </div>
+
     <div class="card-footer">
       <small class="text-muted">{{ .PublishDate.Format "1 Jan 2006" }}
         <i class="bi bi-watch-fill"></i> <i class="bi bi-tag-fill"></i>
         {{.Params.Tags }}
       </small>
     </div>
+
   </div>
   {{ end }}
 </div>

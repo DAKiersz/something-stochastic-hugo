@@ -5,6 +5,7 @@
 <h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
 {{ end }} {{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
 <div class="card">
+
   <div class="card-body">
     <h5 class="card-title">{{ .Title }}</h5>
     <h6 class="card-subtitle mb-2 text-muted">
@@ -13,12 +14,12 @@
     <p class="card-text">{{ .Summary }}</p>
     <a href="{{ .Permalink }}" class="card-link">Read More</a>
   </div>
+
   <div class="card-footer">
-    <small class="text-muted"
-      >{{ .ReadingTime }} <i class="bi bi-watch-fill"></i>
-      <i class="bi bi-tag-fill"></i> {{ .Params.Tags }}</small
-    >
+    <small class="text-muted">{{ .ReadingTime }} <i class="bi bi-watch-fill"></i>
+      <i class="bi bi-tag-fill"></i> {{ .Params.Tags }}</small>
   </div>
+
 </div>
-{{ end }} 
+{{ end }}
 {{ end }}

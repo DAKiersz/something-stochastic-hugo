@@ -6,14 +6,17 @@
 </head>
 
 <body class="global-bg-colour text-light">
-  {{ partial "header" .}}
-
+  <header>
+    {{ partial "header" .}}
+  </header>
   <div class="container mt-3">
     <main>
       {{ block "main" . }}
       {{ end }}
     </main>
-    {{ partial "footer" .}}
+    <footer class="p-4">
+      <p class="text-center text-secondary">&#169 Copyright 2023 Dominik Kiersz</p>
+    </footer>
   </div>
 
   <!-- Bootstrap 5.3 Script -->
