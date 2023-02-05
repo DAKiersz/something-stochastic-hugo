@@ -5,3 +5,7 @@ custom_css: css/custom.css
 
 params:
   author: Dominik Kiersz
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
