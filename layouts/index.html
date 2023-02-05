@@ -3,9 +3,11 @@
 {{ .Content }}
 
 <div class="row">
+
   {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
 
-  <div class="card mt-2">
+  <div class="card mt-2 text-light" style="background-color: #373946">
+
     {{/*
     <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}" />
     */}}
@@ -17,14 +19,15 @@
     </div>
 
     <div class="card-footer">
-      <small class="text-muted">{{ .PublishDate.Format "1 Jan 2006" }}
+      <small class="text-light">{{ .PublishDate.Format "1 Jan 2006" }}
         <i class="bi bi-watch-fill"></i> <i class="bi bi-tag-fill"></i>
         {{.Params.Tags }}
       </small>
     </div>
-
   </div>
+
   {{ end }}
+
 </div>
 
 <div class="mt-4">

@@ -5,4 +5,4 @@ draft: true
 tags: ["hugo"]
 ---
 
-This is my second post. You can read more below...
+This is my second post.

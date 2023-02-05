@@ -10,7 +10,6 @@ html {
 p {
   font-family: "Iosevka", sans-serif;
   font-size: 1rem;
-  line-height: 1.25;
 }
 
 h1,
@@ -40,12 +39,18 @@ h6 {
 .nav-item a:hover,
 .nav-item a:focus {
   background-color: #22232c;
-  color: #ffffffb8;
+  color: #ffffff;
 }
 
-/* Cards */
+/* Card */
 
-.card {
-  background-color: #373946;
-  border: 1px solid #ffffffb8;
+.card a {
+  font-family: "Iosevka", monospace;
+  color: #ffffffb8;
+  text-decoration: none;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #ffffff;
 }

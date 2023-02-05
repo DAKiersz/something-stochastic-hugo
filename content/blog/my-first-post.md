@@ -5,4 +5,4 @@ draft: true
 tags: ["linux"]
 ---
 
-This is my first post. You can read more below...
+This is my first post.
