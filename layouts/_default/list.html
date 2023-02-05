@@ -1,17 +1,13 @@
 {{ define "main" }}
 
-<h1 class="text-center">{{.Title}}</h1>
+<h1 class="text-center"> {{.Title}} </h1>
 
-{{ if .Params.subtitle }}
+<div class="row">
+    {{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
 
-<h2 class="text-center text-secondary">{{ .Params.subtitle }}</h2>
+    {{ partial "card" .}}
 
-{{ end }}
-
-{{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
-
-{{ partial "card" .}}
-
-{{ end }}
+    {{ end }}
+</div>
 
 {{ end }}
