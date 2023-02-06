@@ -1,0 +1,30 @@
+name: Deploy to Azure Static Web Apps
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Hugo site
+        run: |
+          hugo
+
+      - name: Deploy to Azure Static Web Apps
+        uses: azure/static-web-apps-deploy@v0.0.1
+        with:
+          app-name: <your-app-name>
+          app-location: <your-location>
+          resource-group: <your-resource-group>
+          subscription-id: <your-subscription-id>
+          tenant-id: <your-tenant-id>
+          client-id: <your-client-id>
+          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          app-artifact-path: public
