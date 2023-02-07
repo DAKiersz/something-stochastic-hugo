@@ -28,11 +28,7 @@ This blog aimed to be stochastic but mostly centered around tech and science, si
 
 ## Design
 
-This is indeed, 3rd iteration of this Hugo blog, this one being vagely functional. I will make a separate post about learning the ins and outs, but the primarly morale of this journey:
-
-1) WebDev is pain.
-2) I prefer setting up infrastructure for projects like these.
-3) **Do not over-engineer you websites**. My other website, https://kiersz.dev is a single static page with some links. It does its job, just like this blog will.
+This is indeed, 3rd iteration of this Hugo blog, this one being vagely functional. I will make a separate post about learning the ins and outs, but the primarly morale of this journey: WebDev is pain; I prefer setting up infrastructure for projects like these; **Do not over-engineer you websites**. My other website, https://kiersz.dev is a single static page with some links. It does its job, just like this blog will.
 
 ## What's next?
 
