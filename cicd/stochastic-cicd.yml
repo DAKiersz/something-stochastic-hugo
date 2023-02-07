@@ -45,4 +45,4 @@ jobs:
           tenant-id: <your-tenant-id>
           client-id: <your-client-id>
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-          app-artifact-path: public
+          app-artifact-path: ./src/public
