@@ -11,5 +11,5 @@ terraform {
 resource "azurerm_resource_group" "rg" {
   name = "somethingstochastic-rg"
   location = uksouth
-
+}
   
