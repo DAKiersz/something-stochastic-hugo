@@ -9,10 +9,3 @@ params:
 taxonomies:
   tag: "tags"
   category: "categories"
-
-module:
-  mounts:
-    - source: node_modules/bootstrap/scss
-      target: assets/scss/bootstrap
-    - source: node_modules/bootstrap/dist/js/bootstrap.min.js
-      target: assets/js/bootstrap.min.js
