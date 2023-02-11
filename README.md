@@ -1,14 +1,15 @@
 # Something Stochastic
 
-**Version:** 0.1
+**Version:** 1.0
 
-**Last Updated:** 28th December 2022.
-
+**Last Updated:** 11th Feb 2023
 **Developer(s):** Dominik Kiersz
 
 ## Description
 
 This repository contains source code `somethingstochastic.com`, a personal blog.
+
+It is currently scheduled to be deployed around March 2023
 
 ## Project Status
 
@@ -20,9 +21,11 @@ Folks and contributions are welcome with accordance to the Licence stated.
 
 ## To Add / Fix
 
-* Content.
-* Fix footer positioning.
-* Add mobile layout.
+* CI/CD
+* Infra
+* Local bootstrap with npm
+* Font changes
+* Content....
 
 ## Licence
 
