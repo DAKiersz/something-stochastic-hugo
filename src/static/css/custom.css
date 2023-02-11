@@ -1,0 +1,58 @@
+/* Globals */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+
+p {
+  font-family: "Iosevka", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Iosevka", monospace;
+}
+
+/* Structure */
+
+.global-bg-colour {
+  background-color: #22232c;
+}
+
+.navbar-bg-colour {
+  background-color: #373946;
+}
+
+/* Navigation Bar */
+
+.nav-item a {
+  font-family: "Iosevka", monospace;
+  font-size: 1.5rem;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  background-color: #22232c;
+  color: #ffffff;
+}
+
+/* Card */
+
+.card a {
+  font-family: "Iosevka", monospace;
+  color: #ffffffb8;
+  text-decoration: none;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #ffffff;
+}

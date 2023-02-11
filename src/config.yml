@@ -1,0 +1,11 @@
+baseURL: "//somethingstochastic.com/"
+title: "Something Stochastic"
+languageCode: "en-uk"
+custom_css: css/custom.css
+
+params:
+  author: Dominik Kiersz
+
+taxonomies:
+  tag: "tags"
+  category: "categories"

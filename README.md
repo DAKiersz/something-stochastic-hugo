@@ -1,20 +1,32 @@
-# Something Stochastic (Hugo)
+# Something Stochastic
 
-This repository contains the website files for `somethingstochastic.com`, a personal website developed jointly by Dominik Kiersz and Bethan Iley.
+**Version:** 1.0
 
-This builds on our initial efforts but instead uses a Hugo Static Site Generator to ease development.
-
-Last Updated: 20th August 2022
+**Last Updated:** 11th Feb 2023
+**Developer(s):** Dominik Kiersz
 
 ## Description
 
-The personal website will serve as a interdisciplinary blog and a employment portfolio.
+This repository contains source code `somethingstochastic.com`, a personal blog.
+
+It is currently scheduled to be deployed around March 2023
 
 ## Project Status
 
 Active
 
-## Needs Implementation
+## Contributions
 
-- Layouts with Bootstrap
-- Content
+Folks and contributions are welcome with accordance to the Licence stated.
+
+## To Add / Fix
+
+* CI/CD
+* Infra
+* Local bootstrap with npm
+* Font changes
+* Content....
+
+## Licence
+
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)

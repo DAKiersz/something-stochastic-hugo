@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="row">
+
+  {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
+
+  {{ partial "card" .}}
+
+  {{ end }}
+
+</div>
+
+<div class="mt-4">
+  <h2>Disclaimer</h2>
+  <p>
+    All opinions are mine own, and do not represent those of that of my current and former employer(s).<br>
+    Unless specified, this blog is not sponsored or affiliated with any companies or manufacturers of products
+    mentioned.
+  </p>
+</div>
+
+{{ end }}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1 class="text-center"> {{.Title}} </h1>
+
+<div class="row">
+    {{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
+
+    {{ partial "card" .}}
+
+    {{ end }}
+</div>
+
+{{ end }}
