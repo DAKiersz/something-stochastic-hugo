@@ -1,7 +1,7 @@
 ---
 title: "Hello World!"
 date: 2022-08-20T13:01:46+01:00
-draft: true
+draft: false
 tags: ["general"]
 categories: ["general"]
 ---
@@ -28,7 +28,11 @@ This blog aimed to be stochastic but mostly centered around tech and science, si
 
 ## Design
 
-This is indeed, 3rd iteration of this Hugo blog, this one being vagely functional. I will make a separate post about learning the ins and outs, but the primarly morale of this journey: WebDev is pain; I prefer setting up infrastructure for projects like these; **Do not over-engineer you websites**. My other website, https://kiersz.dev is a single static page with some links. It does its job, just like this blog will.
+This is indeed, 3rd iteration of this Hugo blog, this one being vagely functional. I will make a separate post about learning the ins and outs, but the primarly morale of this journey: 
+
+* WebDev is painful.
+* I prefer setting up infrastructure for projects like these.
+* **Do not over-engineer you websites**. My other website, https://kiersz.dev is a single static page with some links. It does its job, just like this blog will.
 
 ## What's next?
 

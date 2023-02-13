@@ -1,3 +1,5 @@
+# WIP: This file is not used yet
+
 name: Deploy to Azure Static Web Apps
 
 on:

@@ -7,5 +7,3 @@ draft: false
 # tags: ["tag1"]
 # categories: ["cat1"]
 ---
-
-## Recent Posts
