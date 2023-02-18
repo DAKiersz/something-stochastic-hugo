@@ -33,7 +33,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: something-stockastic-build
-          path: /src/
+          path: src/public
         continue-on-error: false
   deploy:
     name: "Deploy"
