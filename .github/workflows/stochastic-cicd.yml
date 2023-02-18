@@ -31,18 +31,16 @@ jobs:
         run: |
           cd src
           hugo --minify
-  deploy:
-    runs-on: ubuntu-22.04
-    needs: build
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    steps:
-      - name: Deploy to Azure Static Web Apps
-        uses: static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          action: "upload"
-          app_location: "/src"
-          api_location: "api"
-          output_location: "/src/public"
-#https://learn.microsoft.com/en-gb/azure/static-web-apps/build-configuration?tabs=github-actions
-#https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-to-azure-static-web-app
+  # deploy:
+  #   runs-on: ubuntu-22.04
+  #   needs: build
+  #   if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+  #   steps:
+  #     - name: Deploy to Azure Static Web Apps
+  #       uses: static-web-apps-deploy@v1
+  #       with:
+  #         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+  #         action: "upload"
+  #         app_location: "/src"
+  #         api_location: "api"
+  #         output_location: "/src/public"
