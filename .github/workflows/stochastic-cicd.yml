@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    name: "Build Blog"
+    name: "Build"
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -29,11 +29,21 @@ jobs:
         run: |
           cd src
           hugo --minify
+      - uses: actions/upload-artifact@master
+        with:
+          name: something-stockastic-build
+          path: /src/public
   deploy:
+    name: "Deploy"
     runs-on: ubuntu-22.04
     needs: build
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: something-stockastic-build
+          path: /src
+      - run: ls -la
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
