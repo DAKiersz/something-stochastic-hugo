@@ -4,14 +4,11 @@ on:
   push:
     branches:
       - production
-  pull_request:
-    branches:
-      - production
 
 jobs:
   infra:
     name: "Something Stockastic Infra with TF"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       # SPN credentials
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}

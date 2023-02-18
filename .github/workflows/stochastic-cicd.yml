@@ -4,39 +4,34 @@ on:
   push:
     branches:
       - production
-  pull_request:
-    branches:
-      - production
 
 jobs:
   build:
     name: "Build Blog"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           submodules: recursive
+      - name: Read Hugo Version
+        id: hugo-version
+        run: |
+          . ./.env
+          echo "::set-output name=HUGO_VERSION::${HUGO_VERSION}"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.91.2"
+          hugo-version: "${{ steps.hugo-version.outputs.HUGO_VERSION }}"
           extended: true
       - name: Build Hugo Site
         run: |
           cd src
           hugo --minify
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    needs: build
     steps:
       - name: Deploy to Azure Static Web Apps
         uses: static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "/src/public"
-          api_location: "/api"
-          output_location: "public"
-        env:
-          HUGO_VERSION: 0.92.2
