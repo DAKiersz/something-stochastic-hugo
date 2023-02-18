@@ -13,6 +13,7 @@ jobs:
     name: "Something Stockastic Infra with TF"
     runs-on: ubuntu-latest
     env:
+      # SPN credentials
       ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
       ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
