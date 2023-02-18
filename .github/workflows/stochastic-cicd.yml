@@ -29,10 +29,12 @@ jobs:
         run: |
           cd src
           hugo --minify
+        continue-on-error: false
       - uses: actions/upload-artifact@master
         with:
           name: something-stockastic-build
-          path: /src/public
+          path: /src
+        continue-on-error: false
   deploy:
     name: "Deploy"
     runs-on: ubuntu-22.04
