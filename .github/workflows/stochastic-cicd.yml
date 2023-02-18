@@ -1,5 +1,3 @@
-# WIP: This file is not used yet
-
 name: Deploy to Azure Static Web Apps
 
 on:
@@ -9,10 +7,6 @@ on:
   pull_request:
     branches:
       - production
-    schedule:
-      - cron: "0 4 * * *"
-
-## Build
 
 jobs:
   build:
@@ -22,13 +16,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: recursive
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "0.91.2"
           extended: true
-
       - name: Build Hugo Site
         run: |
           cd src

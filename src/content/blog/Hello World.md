@@ -40,4 +40,4 @@ This does not aim to be a regular blog, but rather a curated collection of my ac
 
 I also set myself a goal of making a single video to showcase my homelab, and more importantly the process of creating it.
 
-The journey begins.
+Thanks for reading!
