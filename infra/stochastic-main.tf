@@ -1,6 +1,6 @@
 locals {
   name        = "somethingstochastic"
-  location    = "uksouth"
+  location    = "westeurope"
   environment = "prod"
   common_tags = {
     project     = "somethingstochastic"
