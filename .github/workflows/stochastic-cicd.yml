@@ -1,4 +1,4 @@
-name: Deploy to Azure Static Web Apps
+name: Deploy Blog
 
 on:
   push:
@@ -10,10 +10,11 @@ on:
 
 jobs:
   build:
+    name: "Build Blog"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
       - name: Setup Hugo
@@ -24,19 +25,18 @@ jobs:
       - name: Build Hugo Site
         run: |
           cd src
-          hugo
-
+          hugo --minify
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Azure Static Web Apps
-        uses: azure/static-web-apps-deploy@v0.0.1
+        uses: static-web-apps-deploy@v1
         with:
-          app-name: <your-app-name>
-          app-location: <your-location>
-          resource-group: <your-resource-group>
-          subscription-id: <your-subscription-id>
-          tenant-id: <your-tenant-id>
-          client-id: <your-client-id>
-          client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-          app-artifact-path: ./src/public
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "/src/public"
+          api_location: "/api"
+          output_location: "public"
+        env:
+          HUGO_VERSION: 0.92.2
