@@ -19,14 +19,14 @@ terraform {
 
 # Resource Group
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-$(local.name)-$(local.environment)-$(local.location)"
+  name     = "rg-${local.name}-${local.environment}-${local.location}"
   location = local.location
   tags     = local.common_tags
 }
 
 # Azure Static Web App
 resource "azurerm_static_site" "staticsite" {
-  name                = "ss-$(local.name)-$(local.environment)-$(local.location)"
+  name                = "ss-${local.name}-${local.environment}-${local.location}"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   tags                = local.common_tags
