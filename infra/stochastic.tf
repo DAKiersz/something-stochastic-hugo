@@ -1,9 +1,9 @@
 locals {
-  name     = "somethingstochastic"
-  location = "uksouth"
+  name        = "somethingstochastic"
+  location    = "uksouth"
   environment = "prod"
   common_tags = {
-    project = "somethingstochastic"
+    project     = "somethingstochastic"
     environment = "prod"
   }
 }
@@ -30,17 +30,6 @@ resource "azurerm_static_site" "staticsite" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   tags                = local.common_tags
+  sku_size            = "Free"
+  sku_tier            = "Free"
 }
-
-# Azure Public DNS Zone
-resource "azurerm_public_dns_zone" "dnszone" {
-  name                = "somethingstochastic.com"
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = azurerm_resource_group.rg.location
-  tags                = local.common_tags
-}
-
-
-# Naming convention
-# https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming
-# <resource-type>-<workload-name/application>-<environment>-<region>-instance
