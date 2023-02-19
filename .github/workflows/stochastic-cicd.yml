@@ -27,12 +27,12 @@ jobs:
           extended: true
       - name: Build Hugo Site
         run: |
-          cd src
           hugo --minify
         continue-on-error: false
+        working-directory: src
       - uses: actions/upload-artifact@v3
         with:
-          name: something-stockastic-build
+          name: something-stochastic-build
           path: src/public
         continue-on-error: false
   deploy:
@@ -43,15 +43,14 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: something-stockastic-build
-          path: /public
-      - run: ls -la
+          name: something-stochastic-build
+          path: ~/public
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
-          app_location: "/public"
+          app_location: "~/public"
           api_location: "api"
           output_location: ""
           skip_app_build: true
