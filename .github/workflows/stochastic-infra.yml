@@ -1,0 +1,47 @@
+name: Deploy Infrastructure
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  infra:
+    name: "Something Stockastic Infra with TF"
+    runs-on: ubuntu-22.04
+    env:
+      # SPN credentials
+      ARM_CLIENT_ID: ${{ secrets.AZURE_AD_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.AZURE_AD_CLIENT_SECRET }}
+      ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+    # Use the Bash shell regardless whether the Windows runner is selected
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+      - name: Terraform Format
+        run: |
+          cd infra
+          terraform fmt -check
+      - name: Terraform Init
+        run: |
+          cd infra
+          terraform init
+      - name: Terraform Validate
+        run: |
+          terraform validate
+      - name: Terraform Plan
+        run: |
+          cd infra
+          terraform plan -out=plan.out
+      - name: Terraform Apply
+        run: |
+          cd infra
+          terraform apply plan.out
