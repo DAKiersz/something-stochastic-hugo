@@ -5,6 +5,7 @@ on:
     branches:
       - production
   pull_request:
+    types: [opened, synchronize, reopened, closed]
     branches:
       - production
 
@@ -62,7 +63,6 @@ jobs:
     needs: deploy
     steps:
       - name: Close Pull Request
-        id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
           app_location: "${{ github.repository }}/public"

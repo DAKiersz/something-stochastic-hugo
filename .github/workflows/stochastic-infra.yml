@@ -28,20 +28,21 @@ jobs:
         uses: hashicorp/setup-terraform@v2
       - name: Terraform Format
         run: |
-          cd infra
           terraform fmt -check
+        working-directory: infra
       - name: Terraform Init
         run: |
-          cd infra
           terraform init
+        working-directory: infra
       - name: Terraform Validate
         run: |
           terraform validate
+        working-directory: infra
       - name: Terraform Plan
         run: |
-          cd infra
           terraform plan -out=plan.out
+        working-directory: infra
       - name: Terraform Apply
         run: |
-          cd infra
           terraform apply plan.out
+        working-directory: infra
