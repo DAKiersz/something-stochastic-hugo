@@ -1,6 +1,6 @@
 # Something Stochastic
 
-[![Deploy Blog](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-cicd.yml/badge.svg?branch=production)](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-cicd.yml)[![Deploy Infrastructure](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-infra.yml/badge.svg)](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-infra.yml)
+[![Deploy Blog](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-cicd.yml/badge.svg?branch=production)](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-cicd.yml) [![Deploy Infrastructure](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-infra.yml/badge.svg)](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-infra.yml)
 
 **Version:** 1.1
 
