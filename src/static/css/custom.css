@@ -22,7 +22,7 @@ html {
 /* Navigation Bar */
 
 .nav-item a {
-  font-family: "Iosevka", Verdana, monospace;
+  font-family: "Iosevka", "Roboto", Verdana, monospace;
   font-size: 1.5rem;
 }
 
@@ -35,7 +35,7 @@ html {
 /* Card */
 
 .card a {
-  font-family: "Iosevka", Verdana, monospace;
+  font-family: "Iosevka", "Roboto", Verdana, monospace;
   color: #ffffffb8;
   text-decoration: none;
 }
