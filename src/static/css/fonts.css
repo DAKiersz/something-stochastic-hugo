@@ -1,4 +1,6 @@
 @font-face {
     font-family: "Iosevka";
-    src: url("./fonts/iosevka-regular.woff2") format('woff2');
+    src: local("Iosevka Regular"),
+        local("Iosevka-Regular"),
+        url("./fonts/iosevka-regular.woff2") format('woff2');
 }
