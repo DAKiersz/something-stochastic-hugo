@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Changed:
 
 - Minor corrections to first post.
-- Stick with default fonts for now.
+- Import a backup font.
 
 # Version 1.0
 

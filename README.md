@@ -1,5 +1,7 @@
 # Something Stochastic
 
+[![Deploy Blog](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-cicd.yml/badge.svg?branch=production)](https://github.com/DAKiersz/something-stochastic-hugo/actions/workflows/stochastic-cicd.yml)
+
 **Version:** 1.1
 
 **Last Updated:** 19th Feb 2023
