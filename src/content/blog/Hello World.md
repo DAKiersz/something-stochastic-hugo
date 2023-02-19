@@ -12,7 +12,7 @@ Hello World! This is my first post on Something Stochastic, my personal tech blo
 
 If you scroll with LinkedIn you might find a questionale post or two about how people don't like selling themselves, that we need to do better because of how more often than not we end up deflecting complements it with a self-deprecating counter-comment. I found there is a truth to them, and I'm just a guilty in this.
 
-Over last few years, I've spend time on a dozen or so misceleneous mini-projects - from refrubruishing laptops, using ADB-S receivers for aircraft tracking or more recently developing home infrastructure (more info soon!). I've dabbled in DXing, Linux and more academic subjects like probability theory to contributing on academic projects, baside a number of personal adventuares. How do you know that I've done any of that? **You don't** and this is where this blog will step in.
+Over last few years, I've spend time on a dozen or so misceleneous mini-projects - from refrubruishing laptops, using ADB-S receivers for aircraft tracking or more recently developing home infrastructure (more info soon!). I've dabbled in DXing, Linux and more academic subjects like probability theory to contributing on academic projects, besides a number of personal adventures. How do you know that I've done any of that? **You don't** and this is where this blog will step in.
 
 In short, this blog will aid me in sharing my thoughts on various topics related to tech and enginnering, but also serve as a noble platform the shameless self-promotion ranging from my experiences, to right up-to my current passion projects - including this very blog, and painstankly learning WebDev to develop it.
 
@@ -32,7 +32,7 @@ This is indeed, 3rd iteration of this Hugo blog, this one being vagely functiona
 
 * WebDev is painful.
 * I prefer setting up infrastructure for projects like these.
-* **Do not over-engineer you websites**. My other website, https://kiersz.dev is a single static page with some links. It does its job, just like this blog will.
+* **Do not over-engineer you websites**. My other website, [kiersz.dev](https://kiersz.dev), is a single static page with some links. It does its job, just like this blog will.
 
 ## What's next?
 
