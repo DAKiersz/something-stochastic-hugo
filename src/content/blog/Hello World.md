@@ -12,7 +12,7 @@ Hello World! This is my first post on Something Stochastic, my personal tech blo
 
 If you scroll with LinkedIn, you might find a questionable post or two about how people don't like selling themselves, that we all need to do better because we end up deflecting complements with self-deprecating counter-comments instead. I found there is a truth to them - and I'm just as guilty of this.
 
-Over last few years, I've spent time on a dozen or so miscellaneous mini-projects - from refurbishing laptops, using ADB-S receivers for aircraft tracking to developing home infrastructure (more info soon!). I've also dabbled in DXing, Linux and probability theory in order to contribute in academic projects, besides a number of personal adventures. One thing missing is a platform to showcase it all, really.
+Over last few years, I've spent time on a dozen or so miscellaneous mini-projects - from refurbishing laptops, using ADB-S receivers for aircraft tracking to developing home infrastructure (more info soon!). I've also dabbled in DXing, Linux and probability theory in order to contribute in academic projects, besides a number of personal adventures. One thing missing is a platform to showcase it all.
 
 In short, this blog will aid me in sharing my thoughts on various topics related to tech and engineering; but also serve as a noble platform for shameless self-promotion and showcasing current passion projects - including this very blog, and the painstaking process of learning WebDev to develop it.
 
