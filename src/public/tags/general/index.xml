@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>general on Something Stochastic</title>
+    <link>/tags/general/</link>
+    <description>Recent content in general on Something Stochastic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sat, 20 Aug 2022 13:01:46 +0100</lastBuildDate><atom:link href="/tags/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World!</title>
+      <link>/blog/hello-world/</link>
+      <pubDate>Sat, 20 Aug 2022 13:01:46 +0100</pubDate>
+      
+      <guid>/blog/hello-world/</guid>
+      <description>Hello World! This is my first post on Something Stochastic, my personal tech blog that aims to be good, occassionally poor.
+Why bother? If you scroll with LinkedIn you might find a questionale post or two about how people don&amp;rsquo;t like selling themselves, that we need to do better because of how more often than not we end up deflecting complements it with a self-deprecating counter-comment. I found there is a truth to them, and I&amp;rsquo;m just a guilty in this.</description>
+    </item>
+    
+  </channel>
+</rss>
