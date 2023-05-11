@@ -4,7 +4,7 @@
 
 <div class="row">
 
-  {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate ) }}
+  {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate.Reverse ) }}
 
   {{ partial "card" .}}
 
