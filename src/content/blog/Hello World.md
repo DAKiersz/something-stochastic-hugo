@@ -2,8 +2,10 @@
 title: "Hello World!"
 date: 2023-02-19T13:01:46+01:00
 draft: false
-tags: ["general"]
-categories: ["general"]
+tags: 
+ - General
+categories:
+ - General
 ---
 
 Hello World! This is my first post on Something Stochastic, my personal tech blog that aims to be good, _occasionally poor_.

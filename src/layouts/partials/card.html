@@ -1,8 +1,8 @@
 <div class="card mt-2 text-light" style="background-color: #373946">
 
-    {{/*
+    {{ if .Params.image }}
     <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}" />
-    */}}
+    {{ end }}
 
     <div class="card-body">
         <h5 class="card-title">{{ .Title }}</h5>
@@ -13,7 +13,12 @@
     <div class="card-footer">
         <small class="text-secondary">{{ .PublishDate.Format "1 Jan 2006" }}
             <i class="bi bi-watch-fill"></i> <i class="bi bi-tag-fill"></i>
-            {{.Params.Tags }}
+            {{- range $index, $tag := .Params.Tags -}}
+            <span class="mr-5">
+                <a href="/tags/{{ $tag | urlize }}">{{ $tag }}</a>
+            </span>
+            {{- if lt $index (sub (len $.Params.Tags) 1) -}} &bull; {{- end -}}
+            {{- end -}}
         </small>
     </div>
 </div>

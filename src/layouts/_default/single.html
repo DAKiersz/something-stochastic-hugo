@@ -2,7 +2,7 @@
 
 <article>
 
-  <header>
+  <div>
     <h1 class="text-left">{{.Title}}</h1>
     <p class="text-left text-secondary">
       {{ .Date.Format "January 2, 2006" }}
@@ -11,7 +11,7 @@
     <h3 class="text-left text-secondary">{{ .Params.subtitle }}</h3>
     {{ end }}
     <hr />
-  </header>
+  </div>
 
   <div>
     {{ .Content }}

@@ -5,6 +5,12 @@ html {
   padding: 0;
 }
 
+/* Typography */
+
+.inline-link {
+  color: #ffffff;
+}
+
 /* Structure */
 
 .global-bg-colour {
@@ -39,4 +45,33 @@ html {
 .card a:hover,
 .card a:focus {
   color: #ffffff;
+}
+
+/* Tag Boxes */
+
+.tag-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: #373946;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.tag-link:hover {
+  color: #ffffffb8;
+}
+
+/* Tag Containers (for wrapping a list)*/
+
+.tag-container-terms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-container-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }

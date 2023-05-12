@@ -1,9 +1,13 @@
 ---
-title: "Using Log Analytics for Cost Optimisation"
+title: "Using Azure Log Analytics for Cost Optimisation"
 date: 2023-05-11T21:37:22Z
 draft: true
-tags: ["KQL, Log Analytics, Azure"]
-categories: ["platform engineering"]
+tags:
+ - KQL
+ - Log Analytics
+ - Azure
+categories:
+ - Platform Engineering
 ---
 
 I've recently done some work on cost optimisation for my current employer, and some of recommendations have saved the company nearly 6k pounds in a single month. This post will cover some of the work I've done, and how you can use Log Analytics to do the same.
@@ -19,5 +23,4 @@ Logs in Azure are stored in a Log Analytics Workspace, which is a container for 
 This is a table that contains performance data for Azure Virtual Machines, it as a number of columns that can be used to identify VMs and the `_ResourceID` we can parse. It also contains a number of columns that can be used to identify the performance metric, such as `CounterValue`, `CounterInstance` or `CounterName`.
 
 ## Cost Optimisation
-
 

@@ -1,19 +1,37 @@
 {{ define "main" }}
 
-{{ .Content }}
-
-<div class="row">
-
-  {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate.Reverse ) }}
-
-  {{ partial "card" .}}
-
-  {{ end }}
-
+<div class="mt-4">
+  <h4 class="text-center m-3">A blog that is good, <i>occasionally poor...</i></h4>
+  <p class="text-center"> Established in 2023, this blog allows me to share my often erratic passion for tech and
+    miscellaneous engineering.
+    <strong>You can find the whole list of posts in Blog menu. </strong> The
+    <strong>Vault</strong> links to my non-production, public Obsidian vault which acts as a boilerplate and knowledge
+    archive hosted in Gitlab Pages.
+  </p>
+  <p class="text-center">This website was written powered by Hugo Single-Site Generator (SSG) and designed by myself
+    (with great
+    difficulty!) using CSS with theBootstrap framework (=>5.30). The brand logo has been kindly created by <a
+      href="https://github.com/bethaniley" class="inline-link"><strong>Bethan Iley</strong>
+    </a></p>
 </div>
 
 <div class="mt-4">
-  <h2>Disclaimer</h2>
+
+  <h4>Recent Posts</h4>
+
+  <div class="row">
+
+    {{ range ( first 3 ( where .Site.RegularPages "Type" "blog" ).ByDate.Reverse ) }}
+
+    {{ partial "card" .}}
+
+    {{ end }}
+
+  </div>
+</div>
+
+<div class="mt-4">
+  <h4>Disclaimer</h4>
   <p>
     All opinions are mine own, and do not represent those of that of my current and former employer(s).<br>
     Unless specified, this blog is not sponsored or affiliated with any companies or manufacturers of products
