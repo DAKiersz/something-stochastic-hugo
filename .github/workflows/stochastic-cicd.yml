@@ -1,21 +1,16 @@
-name: Deploy Blog
+name: Blog Release
 
 on:
   push:
     branches:
-      - production
+      - '*'
   pull_request:
-    types: [opened, synchronize, reopened]
     branches:
       - production
 
-permissions:
-  issues: write
-  contents: read
-
 jobs:
   build:
-    name: Job - Build
+    name: Job - Build Blog
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
@@ -38,10 +33,10 @@ jobs:
           path: src/public
         continue-on-error: false
   deploy:
-    name: Job - Deploy
+    name: Job - Deploy Blog
     runs-on: ubuntu-22.04
     needs: build
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/production') || (github.event_name == 'pull_request' && github.event.action != 'closed')
     steps:
       - uses: actions/download-artifact@v3
         with:
