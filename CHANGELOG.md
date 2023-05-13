@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 # Version 1.2
 
+The website finally has a working tag system and its somewhat presentable now....
+
 ## Added:
 
 - A working tag system and a page to display all tags.
