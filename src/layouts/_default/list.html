@@ -3,11 +3,13 @@
 <h1 class="text-center"> {{.Title}} </h1>
 
 <div class="row">
-    {{ range (where .Paginator.Pages "Type" "!=" "page").ByDate }}
+
+    {{ range (where .Paginator.Pages "Type" "!=" "page").ByDate.Reverse }}
 
     {{ partial "card" .}}
 
     {{ end }}
+
 </div>
 
 {{ end }}

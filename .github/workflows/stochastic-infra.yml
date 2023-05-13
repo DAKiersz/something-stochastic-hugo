@@ -1,4 +1,4 @@
-name: Deploy Infrastructure
+name: Infrastructure Deployment
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   infra:
-    name: "Something Stockastic Infra with TF"
+    name: Deploy - Infrastructure
     runs-on: ubuntu-22.04
     env:
       # SPN credentials

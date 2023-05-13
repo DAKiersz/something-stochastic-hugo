@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# Version 1.2
+
+The website finally has a working tag system and its somewhat presentable now....
+
+## Added:
+
+- A working tag system and a page to display all tags, including a new partial: `terms.html` and additions to CSS.
+- A sample `appinsights.html` to be used in the future with Azure AppInsights.
+
+## Changed:
+
+- Updated bootstrap to 5.3.0-a3
+- Revesed the order of posts on the homepage and the list page.
+- Corrected the date on the first post to the time the website was published.
+- Minor corrections to CICD and Infra files.
+- Moved footer to partials.
+- Moved `<header>` and `<head>` tags to their respective partials.
+- Formatting where applicable.
+- Gitignore template is now done via with gitignore.io.
+- Minor tag changes to `single.html`.
+
+## Removed:
+
+- Removed the `about.md` page and move it to the front page.
+
+## Fixed:
+
+- Fixed `card.html` to display the front image only if it exists.
 
 # Version 1.1
 

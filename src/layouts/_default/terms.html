@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+
+<h1 class="text-center mb-4">Tags</h1>
+
+<div class="row">
+    <div>
+        <ul class="list-unstyled">
+            <div class="tag-container-terms">
+                {{ range .Data.Terms.Alphabetical }}
+                <li>
+                    <a href="{{ .Page.Permalink }}" class="tag-link">{{ .Page.Title }}</a>
+                </li>
+                {{ end }}
+            </div>
+        </ul>
+    </div>
+</div>
+
+{{ end }}
